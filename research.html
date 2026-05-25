@@ -6,22 +6,12 @@
     <title>Naoki Takehara | リサーチ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
-    <style>
-      :root { --primary:#6750a4; --on-primary:#fff; --surface:#fffbfe; --surface-container:#f3edf7; --on-surface:#1c1b1f; }
-      * { box-sizing:border-box; }
-      body { margin:0; font-family:"Noto Sans JP",system-ui,sans-serif; background:var(--surface); color:var(--on-surface); }
-      .top-app-bar { position:sticky; top:0; background:var(--surface); border-bottom:1px solid #e0dfe3; padding:0.8rem 1.2rem; display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
-      .nav-links { display:flex; gap:0.5rem; flex-wrap:wrap; }
-      .nav-link { text-decoration:none; color:var(--on-surface); background:var(--surface-container); padding:0.55rem 0.9rem; border-radius:999px; }
-      .nav-link.active { background:var(--primary); color:var(--on-primary); }
-      .container { max-width:960px; margin:0 auto; padding:1.5rem; }
-      .card { background:var(--surface-container); border:1px solid #e6e1e5; border-radius:24px; padding:1.4rem; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="top-app-bar">
-      <h1>Naoki Takehara</h1>
+      <h1 class="brand">Naoki Takehara</h1>
       <nav class="nav-links" aria-label="ページナビゲーション">
         <a class="nav-link" href="index.html">ホーム</a>
         <a class="nav-link" href="about.html">私について</a>
@@ -30,9 +20,9 @@
       </nav>
     </header>
     <main class="container">
-      <section class="card">
-        <h2>リサーチ</h2>
-        <p>ページ内容は間もなく追加。</p>
+      <section class="panel">
+        <h2 class="section-title">リサーチ</h2>
+        <p>現在取り組んでいるテーマや進捗は、順次このページに追加予定です。</p>
       </section>
     </main>
   </body>

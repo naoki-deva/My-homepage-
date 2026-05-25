@@ -6,80 +6,12 @@
     <title>Naoki Takehara | ブログ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
-    <style>
-      :root {
-        --primary: #6750a4;
-        --on-primary: #ffffff;
-        --surface: #fffbfe;
-        --surface-container: #f3edf7;
-        --surface-container-high: #ece6f0;
-        --on-surface: #1c1b1f;
-        --on-surface-variant: #49454f;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: "Noto Sans JP", system-ui, sans-serif;
-        background: var(--surface);
-        color: var(--on-surface);
-      }
-      .top-app-bar {
-        position: sticky;
-        top: 0;
-        background: var(--surface);
-        border-bottom: 1px solid #e0dfe3;
-        padding: 0.8rem 1.2rem;
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-      .nav-links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-      .nav-link {
-        text-decoration: none;
-        color: var(--on-surface);
-        background: var(--surface-container);
-        padding: 0.55rem 0.9rem;
-        border-radius: 999px;
-      }
-      .nav-link.active { background: var(--primary); color: var(--on-primary); }
-      .container { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
-      .card {
-        background: var(--surface-container);
-        border: 1px solid #e6e1e5;
-        border-radius: 24px;
-        padding: 1.4rem;
-      }
-      .blog-list {
-        list-style: none;
-        margin: 1.5rem 0 0;
-        padding: 0;
-        display: grid;
-        gap: 0.8rem;
-      }
-      .blog-link {
-        display: block;
-        text-decoration: none;
-        background: var(--surface-container-high);
-        border-radius: 16px;
-        padding: 1rem 1.1rem;
-        color: inherit;
-        border: 1px solid #e1d9ea;
-        transition: background 0.2s ease, transform 0.2s ease;
-      }
-      .blog-link:hover,
-      .blog-link:focus-visible {
-        background: #e6def1;
-        transform: translateY(-1px);
-      }
-      .blog-meta { color: var(--on-surface-variant); font-size: 0.92rem; margin-bottom: 0.3rem; }
-      .blog-title { margin: 0; font-size: 1.1rem; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="top-app-bar">
-      <h1>Naoki Takehara</h1>
+      <h1 class="brand">Naoki Takehara</h1>
       <nav class="nav-links" aria-label="ページナビゲーション">
         <a class="nav-link" href="index.html">ホーム</a>
         <a class="nav-link" href="about.html">私について</a>
@@ -88,9 +20,9 @@
       </nav>
     </header>
     <main class="container">
-      <section class="card">
-        <h2>ブログ</h2>
-        <p>記事タイトルをタップすると、個別の記事ページを表示します。</p>
+      <section class="panel">
+        <h2 class="section-title">ブログ</h2>
+        <p class="muted">記事タイトルをタップすると、個別の記事ページを表示します。</p>
         <ul class="blog-list" aria-label="ブログ記事一覧（公開日・最新順）">
           <li>
             <a class="blog-link" href="articles/2026-05-25-how-this-website-works.html">
