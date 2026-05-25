@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naoki Takehara | ホーム</title>
+    <title>Takehara Naoki open source lab (TNOSL) | ホーム</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="top-app-bar">
-      <h1 class="brand">Naoki Takehara</h1>
+      <h1 class="brand">Takehara Naoki open source lab (TNOSL)</h1>
       <nav class="nav-links" aria-label="ページナビゲーション">
         <a class="nav-link active" href="index.html"><span class="material-symbols-outlined">home</span>ホーム</a>
         <a class="nav-link" href="about.html"><span class="material-symbols-outlined">person</span>私について</a>
@@ -21,14 +21,37 @@
     </header>
 
     <main class="container">
-      <section class="panel">
-        <h2 class="section-title">ホーム</h2>
-        <p>このホームページは、各ページの導線をわかりやすく整理し、読みやすい構成へ改善しました。</p>
-        <p class="muted">上部ナビゲーションから「私について」「リサーチ」「ブログ」へスムーズに移動できます。</p>
-        <div class="cta-row">
-          <a class="cta" href="about.html">私についてを見る</a>
-          <a class="cta" href="research.html">リサーチを見る</a>
-          <a class="cta" href="blog.html">ブログを見る</a>
+      <section class="hero">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Takehara Naoki open source lab</p>
+          <h2>世界はAIが解決する</h2>
+          <p class="lead">TNOSLは、オープンソースの力で社会課題を解決し、誰もが再現・改善できる知を循環させる研究ラボです。</p>
+          <p class="mission">オープンさが使命である。</p>
+          <div class="cta-row">
+            <a class="cta primary" href="research.html">研究テーマを見る</a>
+            <a class="cta" href="blog.html">開発ログを読む</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 480 420" role="img">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#8ab4ff" />
+                <stop offset="100%" stop-color="#9f7aea" />
+              </linearGradient>
+            </defs>
+            <rect x="64" y="56" width="352" height="300" rx="34" fill="url(#g1)" opacity="0.25" />
+            <circle cx="150" cy="148" r="44" fill="#8ab4ff" opacity="0.55" />
+            <circle cx="310" cy="252" r="74" fill="#9f7aea" opacity="0.45" />
+            <path d="M112 300 C160 216 274 200 338 126" stroke="#ffffff" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.85" />
+            <g fill="#fff" opacity="0.95">
+              <circle cx="112" cy="300" r="10" />
+              <circle cx="188" cy="242" r="10" />
+              <circle cx="258" cy="206" r="10" />
+              <circle cx="338" cy="126" r="10" />
+            </g>
+          </svg>
         </div>
       </section>
     </main>
