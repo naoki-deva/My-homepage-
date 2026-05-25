@@ -4,9 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Naoki Takehara | ホームページ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --md-sys-color-primary: #6750a4;
+        --md-sys-color-on-primary: #ffffff;
+        --md-sys-color-primary-container: #eaddff;
+        --md-sys-color-on-primary-container: #21005d;
+        --md-sys-color-secondary-container: #e8def8;
+        --md-sys-color-on-secondary-container: #1d192b;
+        --md-sys-color-surface: #fffbfe;
+        --md-sys-color-surface-container: #f3edf7;
+        --md-sys-color-on-surface: #1c1b1f;
+        --md-sys-color-outline: #79747e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Noto Sans JP", system-ui, -apple-system, sans-serif;
+        background: var(--md-sys-color-surface);
+        color: var(--md-sys-color-on-surface);
+      }
+
+      .top-app-bar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: var(--md-sys-color-surface-container);
+        border-bottom: 1px solid #e0dfe3;
+        padding: 1rem 1.5rem;
+      }
+
+      .top-app-bar h1 {
+        margin: 0 0 0.6rem 0;
+        font-size: 1.25rem;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        text-decoration: none;
+        padding: 0.45rem 0.9rem;
+        border-radius: 999px;
+        background: var(--md-sys-color-secondary-container);
+        color: var(--md-sys-color-on-secondary-container);
+        font-weight: 500;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 1.5rem;
+      }
+
+      .card {
+        background: var(--md-sys-color-surface-container);
+        border-radius: 20px;
+        padding: 1.25rem;
+        margin-bottom: 1.2rem;
+        border: 1px solid #e6e1e5;
+      }
+
+      .section-title {
+        margin: 0 0 0.8rem 0;
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+        font-size: 1.4rem;
+      }
+
+      .material-symbols-outlined {
+        font-size: 1.3rem;
+        vertical-align: middle;
+      }
+
+      a {
+        color: var(--md-sys-color-primary);
+      }
+
+      .blog-item {
+        margin: 0;
+        padding: 0.8rem;
+        border-radius: 12px;
+        background: #fff;
+        border: 1px solid #ebe5f0;
+      }
+    </style>
   </head>
   <body>
-    <h1>Naoki Takehara</h1>
-    <p>私はAIを個人的に研究しています。</p>
+    <header class="top-app-bar">
+      <h1>Naoki Takehara</h1>
+      <nav class="nav-links" aria-label="ページ内ナビゲーション">
+        <a class="chip" href="#about"><span class="material-symbols-outlined">person</span>私について</a>
+        <a class="chip" href="#research"><span class="material-symbols-outlined">science</span>リサーチ</a>
+        <a class="chip" href="#blog"><span class="material-symbols-outlined">article</span>ブログ</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="about" class="card" aria-labelledby="about-title">
+        <h2 id="about-title" class="section-title">
+          <span class="material-symbols-outlined">person</span>私について
+        </h2>
+        <p>
+          日本で機械学習や深層学習、AGIの研究・開発を行っています。あわせて、AIを社会で実際に利用する活用方法についても研究しています。
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/naoki-deva" target="_blank" rel="noopener noreferrer"
+            >https://github.com/naoki-deva</a
+          >
+        </p>
+      </section>
+
+      <section id="research" class="card" aria-labelledby="research-title">
+        <h2 id="research-title" class="section-title">
+          <span class="material-symbols-outlined">science</span>リサーチ
+        </h2>
+        <p>ページ内容は間もなく追加。</p>
+      </section>
+
+      <section id="blog" class="card" aria-labelledby="blog-title">
+        <h2 id="blog-title" class="section-title">
+          <span class="material-symbols-outlined">article</span>ブログ
+        </h2>
+        <article class="blog-item">
+          <h3>ブログページ開設のご案内</h3>
+          <p>本ページでは、今後ブログ一覧を順次掲載していきます。ぜひ定期的にご覧ください。</p>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
