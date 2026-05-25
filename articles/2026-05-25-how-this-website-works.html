@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>このウェブサイトの仕組み | Naoki Takehara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #6750a4;
+        --on-primary: #ffffff;
+        --surface: #fffbfe;
+        --surface-container: #f3edf7;
+        --on-surface: #1c1b1f;
+        --on-surface-variant: #49454f;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Noto Sans JP", system-ui, sans-serif;
+        background: var(--surface);
+        color: var(--on-surface);
+      }
+      .top-app-bar {
+        position: sticky;
+        top: 0;
+        background: var(--surface);
+        border-bottom: 1px solid #e0dfe3;
+        padding: 0.8rem 1.2rem;
+      }
+      .top-app-bar a {
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: 700;
+      }
+      .container { max-width: 760px; margin: 0 auto; padding: 1.5rem; }
+      .article-card {
+        background: var(--surface-container);
+        border: 1px solid #e6e1e5;
+        border-radius: 24px;
+        padding: 1.5rem;
+      }
+      .publish-date {
+        color: var(--on-surface-variant);
+        margin-bottom: 0.6rem;
+      }
+      p { line-height: 1.75; }
+    </style>
+  </head>
+  <body>
+    <header class="top-app-bar">
+      <a href="../blog.html" aria-label="ブログ一覧へ戻る">← ブログ一覧に戻る</a>
+    </header>
+    <main class="container">
+      <article class="article-card">
+        <div class="publish-date">公開日: 2026-05-25</div>
+        <h1>このウェブサイトの仕組み</h1>
+        <p>
+          このウェブサイトは、OpenAI Codexを活用したバイブコーディングによって構築しています。
+          デザインの方向性や必要なページ構成を自然言語で指示し、実装と改善を高速に反復することで、
+          小さなアイデアを短時間で形にできる開発スタイルを採用しています。
+        </p>
+        <p>
+          近年のコーディングAIの進歩は非常に速く、定型的な実装やUI調整、コードのリファクタリングでは
+          すでに多くの場面で人間のエンジニアを上回る生産性を見せています。
+          これからは「コードを書く」こと自体の希少性は下がり、課題設定・価値設計・最終判断を担う力が
+          これまで以上に重要になると考えています。
+        </p>
+        <p>
+          将来的には、エンジニアという職能はごく一部の高度な専門領域へ集約される一方で、
+          コーディングそのものはより民主化され、非エンジニアでも自分のプロダクトを作る時代が進むでしょう。
+          私自身も、この変化を前提に「誰もが作れる環境」を実践しながら発信していきます。
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
